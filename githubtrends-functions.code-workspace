@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "ght-functions",
+      "path": "."
+    },
+    {
+      "name": "bq_histogram",
+      "path": "functions/bq_histogram"
+    },
+    {
+      "name": "gcs_to_bq",
+      "path": "functions/gcs_to_bq"
+    },
+    {
+      "name": "gitlog",
+      "path": "functions/gitlog"
+    }
+  ],
+  "settings": {}
+}

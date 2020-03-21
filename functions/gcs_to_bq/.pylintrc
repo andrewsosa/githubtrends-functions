@@ -1,0 +1,23 @@
+[MASTER]
+
+# Pickle collected data for later comparisons.
+persistent=yes
+
+# List of plugins (as comma separated values of python modules names) to load,
+# usually to register additional checkers.
+load-plugins=
+
+[MESSAGES CONTROL]
+
+
+disable=
+    attribute-defined-outside-init,
+    duplicate-code,
+    invalid-name,
+    missing-docstring,
+    missing-module-docstring,
+    protected-access,
+    too-few-public-methods,
+    keyword-arg-before-vararg,
+    # handled by black
+    format

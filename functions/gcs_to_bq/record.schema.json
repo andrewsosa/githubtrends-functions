@@ -1,0 +1,64 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "author_email",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "author_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "body",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "date",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "changed",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "deletions",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "insertions",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "diff",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "hash",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "message",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "refs",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "repo",
+    "type": "STRING"
+  }
+]
