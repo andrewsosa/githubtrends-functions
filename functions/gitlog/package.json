@@ -1,0 +1,35 @@
+{
+  "name": "@githubtrends/functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e js --exec npm start",
+    "start": "functions-framework --target=gitlog --signature-type=event --port=8080",
+    "deploy": "gcloud functions deploy gitlog --trigger-topic ghtrends_gitlog --runtime nodejs10",
+    "test": "mocha test/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/pubsub": "^1.6.0",
+    "@google-cloud/storage": "^4.6.0",
+    "rimraf": "^3.0.2",
+    "simple-git": "^1.132.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "proxyquire": "^2.1.0",
+    "sinon": "^9.0.0",
+    "stream-mock": "^2.0.5"
+  }
+}
